@@ -34,6 +34,7 @@ h1 {
     position: absolute;
     left: 25%;
     width: 50%;
+    height: 23%;
     top: 495px;
     z-index: 1;
 }
@@ -42,7 +43,14 @@ h1 {
 /* Style the list */
 
 #tabs {
-    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    margin: auto;
+}
+
+#tab {
+    position: absolute;
 }
 
 ul.tab {
@@ -84,6 +92,18 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
+    text-align: center;
+    height: 700px;
+}
+
+.tabcontent > h3 {
+    color:#585858;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
+
+#menu {
+    display: block;
 }
