@@ -6,6 +6,7 @@
         <title>Save Percy the Polar Bear</title>
         <meta name="description" content="Find out your carbon footprint and see what you can do to save Percy and all his friends.">
         <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="style.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bungee|Lato" rel="stylesheet">
     </head>
     <body>
@@ -13,6 +14,31 @@
             <h1>Save Percy</h1>
             <img id = "polarBear" src = "Polar%20Bear.png">
             <img id = "ice" src = "Ice.png">
+        </div>
+        <div id = "tabs">
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opentab(event, 'menu')"><img src = "menu.png"></a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opentab(event, 'camera')"><img src = "photo-camera.png"></a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opentab(event, 'chat')"><img src = "paper-plane.png"></a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="opentab(event, 'footprint')"><img src = "footprint.png"></a></li>
+            </ul>
+
+            <div id="menu" class="tabcontent">
+                <h3>What's Your Impact?</h3>
+                <p>Insert Sliders Here :)</p>
+            </div>
+            <div id="camera" class="tabcontent">
+                <h3>Take a Look</h3>
+                <p>Take a picture to see how your surroundings measure up.</p>
+            </div>
+            <div id="chat" class="tabcontent">
+                <h3>Chat With Percy</h3>
+                <p>Insert Chat Here :)</p>
+            </div>
+            <div id="footprint" class="tabcontent">
+                <h3>Lessen Your Footprint</h3>
+                <p>Insert Footprint Here :)</p>
+            </div>
         </div>
     </body>
 </html>
