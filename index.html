@@ -27,7 +27,33 @@
         <div id = "content">
             <div id = "menu" class="tabcontent">
                 <h3>What's Your Impact?</h3>
-                <p>Insert Sliders Here :)</p>
+                <p style="font-family:Lato; text-align:center"> Here you can monitor your carbon footprint! Each scale displays a range of values that you can change based on how much energy, water, or waste your household produces per month. Try to aim for below the average usage value! </p>
+                <h4>Energy Usage (kwh/mo) </h4>
+                <input type="range" min="0" max="1822" value="0" step="1" onchange="showValue(this.value)" />
+                <span id="energy">0</span>
+                <span id="energy2">1822</span>
+                <br>
+                <br>
+                <p>USA Average Energy Usage Per Month: 911 kwh/mo</p>
+                <br>
+        
+                <h4>Water Usage (gal/mo) </h4>
+                <input type="range" min="0" max="24800" value="0" step="1" onchange="showValue1(this.value)"/>
+                <span id="water">0</span>
+                <span id="water2">24800</span>
+                <br>
+                <br>
+                <p>USA Average Water Usage Per Month: 12,400 gal/mo</p>
+                <br>
+        
+                <h4>Waste Production (lbs/mo) </h4>
+                <input type="range" min="0" max="1066" value="0" step="1" onchange="showValue2(this.value)"/>
+                <span id="waste">0</span>
+                <span id="waste2">1066</span>
+                <br>
+                <br>
+                <p>USA Average Waste Production Per Month: 533 lbs/mo</p>
+                <br>
             </div>
             <div id="camera" class="tabcontent">
                 <h3>Take a Look</h3>
