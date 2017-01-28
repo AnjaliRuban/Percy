@@ -22,3 +22,15 @@ function opentab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+function showValue(newValue) {
+    "use strict";
+	document.getElementById("energy").innerHTML = newValue;
+}
+function showValue1(newValue1) {
+    "use strict";
+	document.getElementById("water").innerHTML = newValue1;
+}
+function showValue2(newValue2) {
+    "use strict";
+	document.getElementById("waste").innerHTML = newValue2;
+}
